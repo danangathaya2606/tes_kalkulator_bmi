@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator BMI</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .result {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+  <h1>Kalkulator BMI</h1>
+  <div class="container">
+    <label for="gender">Jenis Kelamin:</label>
+    <select id="gender">
+      <option value="male">Laki-laki</option>
+      <option value="female">Perempuan</option>
+    </select>
+
+    <label for="age">Usia (tahun):</label>
+    <input type="number" id="age" placeholder="Masukkan usia">
+
+    <label for="weight">Berat Badan (kg):</label>
+    <input type="number" id="weight" placeholder="Masukkan berat badan">
+
+    <label for="height">Tinggi Badan (cm):</label>
+    <input type="number" id="height" placeholder="Masukkan tinggi badan">
+
+    <button onclick="calculateBMI()">Hitung BMI</button>
+
+    <p class="result" id="result"></p>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
